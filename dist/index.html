@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <link rel="stylesheet" href="./css/style.min.css?_v=20230306190043">
+  <title>Chainspot widget</title>
+</head>
+
+<body>   
+  
+  <div class="container">
+    <div class="widget">					
+		
+      <div class="widget__content">
+	<div class="widget__header">
+		<img src="img/revain-logo.svg" width="66" height="17" alt="">
+
+		<button class="widget__wallet-btn">
+			<picture><source srcset="img/wallet-btn-icon.webp" type="image/webp"><img src="img/wallet-btn-icon.png" width="16" height="16" alt=""></picture>
+			<span>000...0xx</span>
+		</button>
+	</div>
+	<form class="widget-form">
+		<fieldset class="widget-form__main">
+			<div class="widget-form__main-inputs">
+				<button class="widget-form__change-fields-button">
+					<img src="img/change-fields-icon.svg" alt="">
+				</button>
+				<div class="widget-form__main-input widget-form__main-input_from">
+					<div class="widget-form__main-input-head">
+						<span class="widget-form__main-input-name">From</span>							
+					</div>
+					<button class="choose-token-button">
+						<div class="choose-token-button__icons">
+							<img class="choose-token-button__icon choose-token-button__icon_token"
+								src="img/tokens-logos/token.png" alt="">
+							<img class="choose-token-button__icon choose-token-button__icon_network"
+								src="img/tokens-logos/network.png" alt="">
+						</div>
+						<div class="choose-token-button__value">
+							<span class="choose-token-button__token">USDT</span>
+							<span class="choose-token-button__network">Polygon</span>
+						</div>
+					</button>
+					<div class="widget-form__main-input-balance">							
+						<span class="widget-form__balance-title">Balance:</span>
+						<span class="widget-form__balance-value">0</span>
+					</div>
+					<div class="widget-form__main-input-content">
+						<input type="text" placeholder="Enter amount" value="120" size="1">						
+					</div>		
+					<div class="widget-form__subline">
+						<span class="widget-form__equivalent">$18 207.288</span>			
+						<button class="max-btn">Max</button>
+					</div>					
+				</div>
+				<div class="widget-form__main-input widget-form__main-input_to">
+					<div class="widget-form__main-input-head">
+						<span class="widget-form__main-input-name">To</span>							
+					</div>
+					<button class="choose-token-button">
+						<div class="choose-token-button__icons">
+							<img class="choose-token-button__icon choose-token-button__icon_token"
+								src="img/tokens-logos/token.png" alt="">
+							<img class="choose-token-button__icon choose-token-button__icon_network"
+								src="img/tokens-logos/network.png" alt="">
+						</div>
+						<div class="choose-token-button__value">
+							<span class="choose-token-button__token">USDT</span>
+							<span class="choose-token-button__network">Polygon</span>
+						</div>
+					</button>
+					<div class="widget-form__main-input-balance">							
+						<span class="widget-form__balance-title">Balance:</span>
+						<span class="widget-form__balance-value">0</span>
+					</div>
+					<div class="widget-form__main-input-content widget-form__main-input-content_to">
+						<input type="text" placeholder="0" size="1">						
+					</div>		
+					<span class="widget-form__equivalent">$0</span>			
+				</div>
+			</div>
+			
+			<!-- PLACEHOLDER -->			
+			<!-- <div class="widget__info">
+				<img src="img/routing-icon.svg" alt="">
+				<span>
+					The best route option<br>will be displayed here
+				</span>
+			</div> -->
+
+			<!-- NO ROUTES FOUND -->			
+			<!-- <div class="widget__info" style="align-items: center;">
+				<img src="img/no-routes-icon.svg" alt="">
+				<div>
+					<h3 class="widget__info-title">
+						No routes availaible
+					</h3>
+					<span>
+						Try another token combination
+					</span>
+				</div>				
+			</div> -->
+
+			<!-- WARNING -->			
+			<!-- <div class="widget__info">
+				<img src="img/warning-icon.svg" alt="">
+				<span>
+					<span style="color: black;">Insufficient gas</span><br>			
+					You need to add at least: 0.158 ETH on Ethereum
+				</span>
+			</div> -->
+
+			<!-- DETAILS -->
+			<div class="swap-details">
+				<div class="swap-details__main">
+					<div class="swap-details__target">
+						<div class="swap-details__target-image">
+							<picture><source srcset="img/route-item-logo.webp" type="image/webp"><img class="swap-details__target-icon" src="img/route-item-logo.png" alt=""></picture>
+							<picture><source srcset="img/tokens-logos/network.webp" type="image/webp"><img class="swap-details__target-network" src="img/tokens-logos/network.png" alt=""></picture>
+						</div>						
+						<div class="swap-details__target-caption">
+							<span class="swap-details__target-title">4.8 AVAX</span>
+							<div class="swap-details__target-details">
+								<span class="swap-details__target-details-item">on Solana</span>
+								<span class="swap-details__target-details-item">$1 696.22</span>	
+								<span class="swap-details__target-details-item swap-details__fee tooltip-cnt">
+									<img src="img/check-icon.svg" alt="">
+									$20.93
+
+									<div class="tooltip-popup tooltip-popup_fee">
+										<span>Estimated network fee:</span>
+										<span>1.218333 MATIC ($1.03)</span>
+									</div>
+								</span>							
+							</div>								
+						</div>
+					</div>										
+				</div>				
+			</div>
+
+			<button class="widget-form__submit" type="submit">						
+				<span class="loader"></span>
+				Waiting for connection
+			</button>
+		</fieldset>						
+	</form>
+
+	<a class="widget__powered-by" href="">
+		<span>Powered by</span>
+		<img src="img/chainspot-logo.svg" width="80" height="16" alt="">
+	</a>	
+</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  
+    </div>	    
+  </div>  
+
+  <script src="./js/app.min.js?_v=20230306190043"></script>
+</body>
+
+</html>

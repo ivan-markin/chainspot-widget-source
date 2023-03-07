@@ -1,0 +1,57 @@
+.routes-popup {	
+
+	&__head {
+		display: flex;
+		align-items: center;
+		margin-bottom: 2.08vw;
+	}
+
+	&__title {
+		font-size: 1.25vw;
+		margin: 0 .16vw 0 0;
+	}
+
+	&__counter {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		width: 1.15vw;
+		height: 1.15vw;
+		border-radius: 50%;
+		background-color: var(--primary-blue);
+		font-size: .73vw;
+		margin-right: .83vw;
+	}
+
+	&__wrap {
+		overflow-y: scroll;
+		height: calc(100vh - 5.41vw);
+		padding: 10px 1.25vw 2.08vw 0;
+		margin-bottom: 2.08vw;
+
+		&::-webkit-scrollbar {			
+			width: 4px;
+		}
+		
+		&::-webkit-scrollbar-track {
+			background-color: rgba(0, 113, 255, 0.15);
+			width: 4px;
+			margin-bottom: 2.08vw;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--primary-blue);			
+			border-radius: 2px;
+		}
+	}
+
+	.popup__container {
+		min-width: 31.46vw;		
+		padding: 2.4vw 1.04vw 2.4vw 1.82vw;		
+	}
+
+	.estimated-token {
+		margin-bottom: .9vw;
+	}
+}

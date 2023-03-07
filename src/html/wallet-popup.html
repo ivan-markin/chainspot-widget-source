@@ -1,0 +1,132 @@
+<div class="widget-popup wallet-popup">
+	<div class="widget-popup__header">
+		<button class="widget-popup__back-btn">Back</button>
+		<h3 class="widget-popup__title">Wallet</h3>
+	</div>
+	<div class="wallet-popup__cnt">
+		<div class="wallet-popup__logo">
+			<img class="wallet-popup__logo-wallet" src="@img/metamask-logo-large.png" alt="">
+			<img class="wallet-popup__logo-network" src="@img/tokens-logos/network.png" alt="">
+		</div>
+		<h1 class="wallet-popup__title popup__title">Metamask</h1>
+		<div class="wallet-popup__wallet-info">
+			<div class="wallet-popup__copy-field">
+				<span>000...0xx</span>
+				<button class="copy-btn"></button>
+			</div>
+			<div class="wallet-popup__balance">
+				<span>8.531 МАTIC</span>
+				<img src="@img/wallet-icon_violet.svg" alt="">
+			</div>
+			<!-- <span class="wallet-popup__copied">
+				Copied
+				<img src="@img/copied.svg" alt="">
+			</span> -->			
+		</div>	
+		<div class="wallet-popup__actions">
+			<div class="wallet-popup__select select select_outlined">
+				<div class="choose-token-popup__button select__button">
+					<img src="@img/left-right-arrows.svg" alt="">
+					Switch network
+				</div>
+				<div class="select__dropdown">
+					<a class="select__item select__item_active" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/eth.svg" alt="">
+						</span>
+						<span class="select__item-name">Etherium</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/bnb.svg" alt="">
+						</span>
+						<span class="select__item-name">BSC</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/polygon.svg" alt="">
+						</span>
+						<span class="select__item-name">Polygon</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/avalanche.svg" alt="">
+						</span>
+						<span class="select__item-name">Avalanche</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/fantom.svg" alt="">
+						</span>
+						<span class="select__item-name">Fantom</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/harmony.png" alt="">
+						</span>
+						<span class="select__item-name">Harmony</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/arbitrum.png" alt="">
+						</span>
+						<span class="select__item-name">Arbitrum</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/optimism.png" alt="">
+						</span>
+						<span class="select__item-name">Optimism</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/fuse.png" alt="">
+						</span>
+						<span class="select__item-name">Fuse</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/moon-river.png" alt="">
+						</span>
+						<span class="select__item-name">MoonRiver</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/cronos.png" alt="">
+						</span>
+						<span class="select__item-name">Cronos</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/gnosis.png" alt="">
+						</span>
+						<span class="select__item-name">Gnosis</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/moon-beam.png" alt="">
+						</span>
+						<span class="select__item-name">MoonBeam</span>
+					</a>
+					<a class="select__item" href="">
+						<span class="select__item-logo">
+							<img src="@img/currencies-logos/boba.png" alt="">
+						</span>
+						<span class="select__item-name">Boba</span>
+					</a>
+				</div>
+			</div>
+			<button class="wallet-popup__switch-network">
+				<img src="@img/exchange-arrows.svg" alt="">
+				Switch network
+			</button>
+	
+			@@include('switch-network-popup.html', {})
+	
+			<button class="wallet-popup__disconnect-btn">
+				<img src="@img/close-circle.svg" alt="">
+				Disconnect
+			</button>
+		</div>
+	</div>
+</div>	

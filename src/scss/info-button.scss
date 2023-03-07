@@ -1,0 +1,14 @@
+.info-button {	
+	flex: none;
+	width: 14px;
+	height: 14px;			
+	border: none;
+	background: url('../img/info-icon.svg') no-repeat center;
+	background-size: contain;
+	cursor: pointer;
+
+	@media (max-width: 1280px), (min-width: 1920px) {
+		width: .73vw;
+		height: .73vw;
+	}
+}

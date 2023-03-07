@@ -1,0 +1,25 @@
+.connect-wallet-popup {
+
+	&__wallets-list {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	&__wallet {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: #FFFFFF;
+		border: 1px solid #E7EAEF;
+		border-radius: 5px;
+		height: 66px;
+		font-size: 16px;
+		cursor: pointer;
+		padding: 0 20px;
+
+		img {
+			width: 28px;
+		}
+	}
+}

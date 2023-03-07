@@ -1,0 +1,156 @@
+.swap-details {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #E2E7F3;
+	border-radius: 10px;
+	position: relative;
+	padding: 12px 10px 7px 10px;
+	margin-bottom: 16px;
+
+	&::before {
+		content: 'The best';
+		display: flex;
+		align-items: center;
+		height: 18px;
+		width: fit-content;
+		border-radius: 6px;
+		background-color: #CCFF00;
+		font-weight: 700;
+		font-size: 8px;
+		line-height: 1;
+		text-transform: uppercase;
+		position: absolute;
+		left: 10px;
+		top: -9px;
+		padding: 0 7px;
+	}
+
+	&_loading {		
+		align-items: center;
+		justify-content: center;
+		height: 118px;
+
+		&::before {
+			display: none;
+		}
+	}
+
+	&_no-routes {		
+		align-items: center;
+		justify-content: center;
+		border-color: #E2E6EE;
+		height: 118px;
+
+		&::before {
+			display: none;
+		}
+
+		img {
+			margin-bottom: 5px;
+		}
+
+		h3 {
+			font-weight: 800;
+			font-size: 16px;
+			margin: 0 0 5px;
+		}
+
+		p {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 1.29;						
+			color: #AFBBC2;
+			margin: 0;
+		}
+	}
+
+	&__main {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;		
+	}
+
+	&__target {
+		display: flex;
+		align-items: center;
+		gap: 7px;
+	}
+
+	&__target-title {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1;		
+		margin: 5px 0 -5px;	
+	}
+
+	&__target-details {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		font-size: 11px;
+		font-weight: 500;
+		line-height: 1;	
+		color: #9599AD;
+
+		&-item {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			
+			&:not(:first-child)::before {
+				content: '';
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				background: #E2E6EE;
+			}		
+		}
+	}
+
+	&__target-image {
+		position: relative;
+		width: 28px;
+		height: 28px;
+	}
+	
+	&__target-icon {		
+		width: 28px;
+		height: 28px;
+	}
+
+	&__target-network {		
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		border: 1px solid white;
+		position: absolute;
+		bottom: -1px;
+		right: -5px;
+	}
+
+	&__target-caption {
+		display: flex;
+		flex-direction: column;
+		// gap: 3px;
+	}	
+
+	&__fee {
+		background: #F0F1F3;
+		border-radius: 4px;
+		position: relative;
+		transition: all .1s;
+		cursor: pointer;
+		padding: 3px 4px;		
+		margin-left: 11px;
+
+		&::before {
+			position: absolute;
+			left: -11px;
+			top: 9px;
+		}
+
+		&:hover {
+			color: #142438;
+		}
+	}
+}

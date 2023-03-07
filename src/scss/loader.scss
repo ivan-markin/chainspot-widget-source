@@ -1,0 +1,17 @@
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.loader {
+	width: 22px;
+	height: 22px;
+	background: url('../img/loader-icon.svg') no-repeat center;
+	background-size: contain;
+	animation-name: rotate;
+	animation: rotate 1.5s linear infinite;
+}

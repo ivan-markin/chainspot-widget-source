@@ -1,0 +1,17 @@
+.external-link {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 600;
+	font-size: 14px;
+	color: #0071FF;
+	text-decoration: none;
+
+	&::after {
+		content: '';
+		width: 14px;
+		height: 14px;
+		background: url('../img/external-link-icon.svg') no-repeat center;
+		background-size: contain;
+	}
+}

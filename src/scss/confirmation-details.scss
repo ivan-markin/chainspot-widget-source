@@ -1,0 +1,33 @@
+.confirmation-details {
+	display: flex;
+	flex-direction: column;
+	gap: 9px;
+	border: 1px solid #E2E7F3;
+	border-radius: 10px;
+	padding: 16px 9px 16px 14px;
+	margin-bottom: 16px;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__name {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		font-weight: 500;
+		font-size: 11px;		
+		color: #9599AD;
+
+		img {
+			width: 18px;
+		}
+	}
+
+	&__value {
+		font-weight: 500;
+		font-size: 11px;
+	}
+}

@@ -1,0 +1,9 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+
+	@media (max-width: 768px) {
+		justify-content: flex-start;
+	}
+}

@@ -1,0 +1,29 @@
+.delete-history-popup {
+
+	&__title {
+		margin: 0;
+	}
+
+	&__description {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 1.5;	
+		color: #9599AD;
+		margin-bottom: 32px;
+	}
+
+	&__cta {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 12px;
+	}
+	
+	.popup__container {
+		width: 90%;
+		max-width: 412px;
+		min-width: 412px;
+		min-height: 0;
+		padding: 32px;
+	}
+}

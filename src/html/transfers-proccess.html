@@ -1,0 +1,57 @@
+<div class="transfers-container">			
+	
+	@@include('transfers-tabs.html', {
+		'transfers': 'active', 
+		'history': '', 
+		'faq': '', 
+	})
+	
+	<div class="transfers transfers_proccess">					
+		
+		<!-- @@include('transfers-form.html', {}) -->
+
+		<div class="transfers__content">
+			<div class="transfers__header">
+				<button class="back-btn"></button>
+				<div class="transfers__title-block">
+					<h1 class="transfers__title">Swap process</h1>
+					<div class="transfers__trx-id">
+						<span>ID:</span>
+						<span>1089wf6</span>
+						<button class="copy-btn"></button>
+					</div>
+				</div>
+				<span class="loader-dark"></span>
+			</div>
+			<div class="transfers__swaping-tokens">
+				@@include('token-container.html', {
+					'column': 'column'
+				})
+				
+				<div class="transfers__indicator">
+					<div class="transfers__indicator-networks">
+						<img src="@img/tokens-logos/network.png" width="14" height="14" alt="">
+						<img src="@img/tokens-logos/network-2.svg" width="14" height="14" alt="">
+					</div>
+					<img class="transfers__arrow" src="@img/transfer-arrow.svg" width="24" height="16" alt="">
+					<!-- <img class="transfers__success-icon" src="@img/proccess-success-icon.svg" width="17" height="17" alt=""> -->
+				</div>
+				
+				@@include('token-container.html', {
+					'column': 'column'
+				})
+			</div>
+			
+			@@include('transfer-success-notification.html', {})
+			@@include('transfer-proccess-notification.html', {})	
+			
+		</div>	
+		
+		<a class="transfers__telegram-link" href="">
+			<img src="@img/telegram-icon_small.svg" width="14" height="12" alt="">
+			Any questions — contact support
+		</a>
+	</div>
+
+	<span class="transfers-container__subscription">Open beta: please use at your own risk.</span>
+</div>

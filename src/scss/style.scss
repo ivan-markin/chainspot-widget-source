@@ -1,0 +1,120 @@
+@import './normalize.scss';
+@import './fonts.scss';
+@import './variables';
+@import './aos/aos.scss';
+@import './swiper/swiper-bundle.scss';
+
+// Blocks
+@import './agreement-popup.scss';
+@import './allowance-popup.scss';
+@import './checkbox.scss';
+@import './choose-token-button.scss';
+@import './swap-popup.scss';
+@import './copy-btn.scss';
+@import './delete-history-popup.scss';
+@import './estimated-token.scss';
+@import './form-network-list-popup.scss';
+@import './info-button.scss';
+@import './loader.scss';
+@import './main.scss';
+@import './popup-back-btn.scss';
+@import './popup.scss';
+@import './refused-popup.scss';
+@import './rejected-popup.scss';
+@import './remove-btn.scss';
+@import './replace-button.scss';
+@import './reset-button.scss';
+@import './round-checkbox.scss';
+@import './route-logos.scss';
+@import './routes-popup.scss';
+@import './search-popup.scss';
+@import './select.scss';
+@import './switch-network-popup.scss';
+@import './switch.scss';
+@import './token-cnt.scss';
+@import './tokens-list-item.scss';
+@import './transaction-path.scss';
+@import './transfer-approve-popup.scss';
+@import './transfer-popup.scss';
+@import './transfer-submitted-popup.scss';
+@import './wallet-popup.scss';
+@import './widget-form.scss';
+@import './widget.scss';
+@import './widget-popup.scss';
+@import './connect-wallet-popup.scss';
+@import './max-btn.scss';
+@import './loader-violet.scss';
+@import './swap-details.scss';
+@import './tooltip.scss';
+@import './tooltip-btn.scss';
+@import './tooltip-popup.scss';
+@import './confirmation-token.scss';
+@import './confirmation.scss';
+@import './confirmation-details.scss';
+@import './confirmation-popup.scss';
+@import './service-popup.scss';
+@import './btn.scss';
+@import './proccess-popup.scss';
+@import './external-link.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: var(--font-dark);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 420px) {
+    padding: 0 16px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;  
+  padding: 0 40px;
+  margin: 0 auto;   
+
+  @media (min-width: 1920px) {
+    max-width: 1920px;    
+  } 
+}
+
+

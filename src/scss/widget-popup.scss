@@ -1,0 +1,42 @@
+.widget-popup {
+
+	&__header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		margin-bottom: 26px;
+	}
+
+	&__title {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 1.2;		
+		text-align: center;
+		color: #23262F;
+		margin: 0;
+	}
+
+	&__back-btn {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-weight: 700;
+		font-size: 14px;
+		background: none;
+		border: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		cursor: pointer;
+
+		&::before {
+			content: '';
+			width: 5px;
+			height: 8px;
+			background: url('../img/back-btn-icon.svg') no-repeat center;
+			background-size: contain;
+			flex: none;
+		}
+	}
+}
