@@ -1,5 +1,9 @@
 .wallet-popup {
 
+	.hor &__header {
+		margin-bottom: 12px;
+	}
+	
 	&__cnt {
 		display: flex;
 		flex-direction: column;
@@ -51,6 +55,10 @@
 		margin-bottom: 38px;
 	}
 
+	.hor &__wallet-info {
+		margin-bottom: 16px;
+	}
+
 	&__copied {
 		display: flex;
 		align-items: center;
@@ -72,6 +80,11 @@
 		align-items: center;		
 		gap: 8px;
 		width: 100%;		
+	}
+
+	.hor &__actions {
+		flex-direction: row;
+		width: 408px;
 	}
 
 	&__select {		

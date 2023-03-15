@@ -23,3 +23,16 @@
 		}
 	}
 }
+
+.hor .connect-wallet-popup {	
+	
+	&__wallets-list {		
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	&__wallet {
+		width: 27%;
+	}
+}

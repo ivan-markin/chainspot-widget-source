@@ -12,6 +12,11 @@
 	font-weight: 700;
 	border: none;
 	cursor: pointer;
+	padding: 0 34px;
+
+	.hor & {
+		width: fit-content;		
+	}
 
 	&:disabled {
 		background: #EDF2F4;

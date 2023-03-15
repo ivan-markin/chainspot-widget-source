@@ -8,6 +8,11 @@
 	padding: 15px 16px 8px;		
 	margin-bottom: 24px;	
 
+	&.hor {
+		max-width: 995px;
+		min-height: 221px;
+	}
+
 	&__title {
 		font-weight: 800;
 		font-size: 24px;
@@ -21,11 +26,25 @@
 		line-height: 1;
 	}
 
+	&__logo {
+		width: 66px;
+		height: 18px;
+	}
+	
+	&.hor &__logo {
+		width: 89px;
+		height: 24px;
+	}
+
 	&__header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		margin-bottom: 14px;
+	}
+
+	.hor &__header {
+		margin-bottom: 32px;
 	}
 
 	&__wallet-btn {
@@ -130,7 +149,7 @@
 		line-height: 1.45;		
 		color: #9599AD;
 		padding: 8px 12px;
-		margin-bottom: 16px;
+		margin-bottom: 16px;		
 
 		&-title {
 			font-size: 14px;
@@ -138,6 +157,13 @@
 			color: var(--font-dark);
 			margin: 0;
 		}
+	}
+
+	.hor &__info {
+		justify-content: center;
+		order: 3;
+		width: 100%;
+		padding: 15px 12px;
 	}
 
 	&__supported-title {
@@ -296,5 +322,9 @@
 		gap: 4px;		
 		width: fit-content;
 		margin: 8px auto 0;
+	}
+
+	&.hor &__powered-by {
+		margin: 0 0 0 auto;
 	}
 }

@@ -6,7 +6,12 @@
 	&__main {
 		display: flex;
 		flex-direction: column;		
-	}
+	}	
+
+	.hor &__main {		
+		flex-direction: row;		
+		flex-wrap: wrap;		
+	}	
 
 	&__main-inputs {
 		display: flex;				
@@ -15,11 +20,18 @@
 		margin-bottom: 16px;	
 	}
 
+	.hor &__main-inputs {		
+		width: calc(100% - 291px);	
+		flex: auto;	
+		gap: 56px;
+	}
+
 	&__main-input {
 		display: flex;		
 		flex-direction: column;		
 		width: 100%;		
 		background: #EFF6FC;
+		position: relative;
 		border: 1px solid #E2E6EE;		
 
 		&_from {			
@@ -35,9 +47,26 @@
 		}		
 	}	
 
+	.hor &__main-input {
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		border: none;
+		border-radius: 8px;
+		height: 48px;
+		padding: 4px 12px 4px 4px;
+	}
+
 	&__main-input-name {
 		font-size: 11px;
 		font-weight: 500;	
+	}
+
+	.hor &__main-input-name {
+		position: absolute;
+		left: 10px;
+		top: -20px;
 	}
 
 	&__main-input-head {
@@ -49,6 +78,12 @@
 
 	&__main-input-balance {
 		margin-bottom: 9px;
+	}
+
+	.hor &__main-input-balance {
+		position: absolute;
+		right: 10px;
+		top: -25px;
 	}
 
 	&__balance-title {
@@ -91,6 +126,14 @@
 		}
 	}
 
+	.hor &__main-input-content {
+		width: calc(100% - 151px);
+
+		input {
+			text-align: right;
+		}
+	}
+
 	&__equivalent {		
 		font-weight: 500;
 		font-size: 11px;
@@ -117,6 +160,15 @@
 			color: #AFBBC2;
 			cursor: not-allowed;
 		}
+	}
+
+	.hor &__submit {
+		flex: none;
+		order: 1;
+		width: 283px;
+		height: 48px;
+		border-radius: 10px;
+		margin-left: 8px;
 	}
 
 	&__filters {
@@ -275,7 +327,22 @@
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 		box-shadow: 0px 1px 1px rgba(0, 23, 82, 0.06);
+		z-index: 10;
 		cursor: pointer;
+
+		img {
+			width: 16px;
+		}
+	}
+
+	.hor &__change-fields-button {
+		width: 28px;
+		height: 28px;
+		box-shadow: 0px 1px 1px rgba(0, 23, 82, 0.06), 0px 5px 20px -5px rgba(0, 12, 78, 0.2);	
+		
+		img {
+			width: 22px;
+		}
 	}
 
 	&__main-input-bottom {
@@ -289,5 +356,11 @@
 		display: flex;
 		align-items: center;
 		gap: 3px;
+	}
+
+	.hor &__subline {
+		position: relative;
+		top: -18px;
+		margin-left: auto;
 	}
 }

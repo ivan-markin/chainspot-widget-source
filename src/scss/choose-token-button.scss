@@ -71,3 +71,33 @@
 		color: #9599AD;
 	}
 }
+
+.hor .choose-token-button {
+	height: 40px;
+	min-width: 141px;	
+	margin-right: 10px;
+
+	&__token {
+		font-size: 14px;	
+		font-weight: 700;
+		margin: 0;	
+	}
+
+	&__icons {		
+		width: 28px;
+		height: 28px;		
+	}
+
+	&__icon {		
+		
+		&_token {		
+			width: 28px;
+			height: 28px;			
+		}
+
+		&_network {			
+			width: 14px;
+			height: 14px;			
+		}
+	}
+}

@@ -4,6 +4,14 @@
 	justify-content: space-between;
 	cursor: pointer;	
 
+	.hor & {
+		width: fit-content;
+		min-width: 180px;
+		border: 1px solid #E2E6EE;
+		border-radius: 10px;
+		padding: 12px 8px;
+	}
+
 	&__left {
 		display: flex;
 		align-items: center;

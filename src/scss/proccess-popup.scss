@@ -53,4 +53,42 @@
 		text-fill-color: transparent;
 		margin-bottom: 6px;
 	}
+
+	.hor & .service-popup__text_time {
+		display: none;
+	}
+
+	.hor & .service-popup__text {
+		margin-bottom: 30px;
+	}
+
+	&__pending {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-weight: 700;
+		font-size: 14px;				
+		color: #3B27F9;
+
+		.loader-violet {
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	&__success {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1;
+		gap: 4px;
+		margin-bottom: 6px;
+	}
+
+	.hor &__success {
+		flex-direction: row;
+		gap: 8px;
+	}
 }

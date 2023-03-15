@@ -6,21 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
-  <link rel="stylesheet" href="./css/style.min.css?_v=20230306190043">
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>Chainspot widget</title>
 </head>
 
 <body>   
   
   <div class="container">
-    <div class="widget">					
+    <div class="widget hor">					
 		
       <div class="widget__content">
 	<div class="widget__header">
-		<img src="img/revain-logo.svg" width="66" height="17" alt="">
+		<img class="widget__logo" src="img/revain-logo.png" width="89" height="24" alt="">
 
 		<button class="widget__wallet-btn">
-			<picture><source srcset="img/wallet-btn-icon.webp" type="image/webp"><img src="img/wallet-btn-icon.png" width="16" height="16" alt=""></picture>
+			<img src="img/wallet-btn-icon.png" width="16" height="16" alt="">
 			<span>000...0xx</span>
 		</button>
 	</div>
@@ -80,8 +80,10 @@
 					</div>
 					<div class="widget-form__main-input-content widget-form__main-input-content_to">
 						<input type="text" placeholder="0" size="1">						
-					</div>		
-					<span class="widget-form__equivalent">$0</span>			
+					</div>							
+					<div class="widget-form__subline">
+						<span class="widget-form__equivalent">$0</span>									
+					</div>	
 				</div>
 			</div>
 			
@@ -120,8 +122,8 @@
 				<div class="swap-details__main">
 					<div class="swap-details__target">
 						<div class="swap-details__target-image">
-							<picture><source srcset="img/route-item-logo.webp" type="image/webp"><img class="swap-details__target-icon" src="img/route-item-logo.png" alt=""></picture>
-							<picture><source srcset="img/tokens-logos/network.webp" type="image/webp"><img class="swap-details__target-network" src="img/tokens-logos/network.png" alt=""></picture>
+							<img class="swap-details__target-icon" src="img/route-item-logo.png" alt="">
+							<img class="swap-details__target-network" src="img/tokens-logos/network.png" alt="">
 						</div>						
 						<div class="swap-details__target-caption">
 							<span class="swap-details__target-title">4.8 AVAX</span>
@@ -137,11 +139,72 @@
 										<span>1.218333 MATIC ($1.03)</span>
 									</div>
 								</span>							
-							</div>								
+							</div>														
 						</div>
+						<div class="swap-details__info">
+							<div class="swap-details__info-item tooltip-cnt">
+								<span class="swap-details__info-icon">
+									<img src="img/time-icon.svg" alt="">
+								</span>
+								<span class="swap-details__info-caption">14:53</span>
+								<div class="tooltip-popup">
+									<span>Estimated&nbsp;swap&nbsp;execution<br>
+									time&nbsp;in&nbsp;minutes</span>
+								</div>
+							</div>
+							<div class="swap-details__info-item tooltip-cnt">
+								<span class="swap-details__info-icon">
+									<img src="img/gas-icon.svg" alt="">
+								</span>
+								<span class="swap-details__info-caption">$20.93</span>
+								<div class="tooltip-popup tooltip-popup_fee">
+									<span>Estimated network fee:</span>
+									<span>1.218333 MATIC ($1.03)</span>
+								</div>
+							</div>
+							<div class="swap-details__info-item tooltip-cnt">
+								<span class="swap-details__info-icon">
+									<img src="img/steps-icon.svg" alt="">
+								</span>
+								<span class="swap-details__info-caption">1</span>
+								<div class="tooltip-popup">
+									<span>1&nbsp;transaction</span>
+								</div>
+							</div>
+						</div>
+						<div class="swap-details__path">
+							<div class="swap-details__path-item tooltip-cnt">
+								<span>Router</span>
+								<div class="estimated-token__route-logos route-logos">
+									<img class="estimated-token__route-logo route-logo" src="img/route-item-logo.png" alt="">									
+								</div>								
+								<div class="tooltip-popup">
+									<span>Router&nbsp;via&nbsp;LiFi</span>
+								</div>
+							</div>
+							<div class="swap-details__path-item tooltip-cnt">
+								<span>Bridges</span>
+								<div class="estimated-token__route-logos route-logos">
+									<img class="estimated-token__route-logo route-logo" src="img/route-item-logo.png" alt="">
+									<img class="estimated-token__route-logo route-logo" src="img/route-item-logo2.png" alt="">
+								</div>								
+								<div class="tooltip-popup" style="left: 15px;">
+									<span>Bridge&nbsp;via&nbsp;Connext<br>and&nbsp;Symbyosis</span>
+								</div>
+							</div>
+							<div class="swap-details__path-item tooltip-cnt">
+								<span>DEX</span>
+								<div class="estimated-token__route-logos route-logos">									
+									<img class="estimated-token__route-logo route-logo" src="img/route-item-logo2.png" alt="">
+								</div>								
+								<div class="tooltip-popup" style="left: 15px;">
+									<span>Transfer&nbsp;via&nbsp;1inch</span>
+								</div>
+							</div>
+						</div>	
 					</div>										
 				</div>				
-			</div>
+			</div>			
 
 			<button class="widget-form__submit" type="submit">						
 				<span class="loader"></span>
@@ -167,11 +230,13 @@
       
       
       
+      
+      
   
     </div>	    
   </div>  
 
-  <script src="./js/app.min.js?_v=20230306190043"></script>
+  <script src="./js/app.min.js"></script>
 </body>
 
 </html>

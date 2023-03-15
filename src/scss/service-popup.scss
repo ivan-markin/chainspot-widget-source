@@ -11,6 +11,10 @@
 	height: 100%;
 	padding: 26px 16px 16px;
 
+	.hor & {
+		padding-top: 13px;
+	}
+
 	&__title {
 		font-weight: 800;
 		font-size: 16px;
@@ -56,6 +60,10 @@
 		}
 	}
 
+	.hor &__icon {
+		margin-bottom: 8px;
+	}
+
 	&__text {
 		font-weight: 500;
 		font-size: 14px;
@@ -76,5 +84,29 @@
 			align-items: center;
 			gap: 5px;
 		}
+	}
+
+	&__cta {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+
+	.hor &__cta {
+		flex-direction: row-reverse;
+		gap: 24px;
+	}
+
+	.hor &__text {
+		max-width: 540px;
+	}
+
+	.btn {
+		margin-top: auto;
+	}
+
+	.hor .btn {
+		margin-top: 0;
 	}
 }
