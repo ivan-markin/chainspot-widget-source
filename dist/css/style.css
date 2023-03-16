@@ -5935,6 +5935,7 @@ button.swiper-pagination-bullet {
 }
 .widget.hor {
   max-width: 995px;
+  min-width: 925px;
   min-height: 221px;
 }
 .widget__title {
@@ -6905,6 +6906,10 @@ button.swiper-pagination-bullet {
   width: 20px;
   height: 20px;
 }
+.hor .confirmation-token__icons {
+  width: 28px;
+  height: 28px;
+}
 .confirmation-token__icon {
   position: absolute;
 }
@@ -6916,6 +6921,10 @@ button.swiper-pagination-bullet {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.hor .confirmation-token__icon_token {
+  width: 28px;
+  height: 28px;
 }
 .confirmation-token__icon_network {
   bottom: -3px;
@@ -6937,6 +6946,16 @@ button.swiper-pagination-bullet {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+.hor .confirmation-token__value {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 20px;
+}
 .confirmation-token__token {
   font-size: 14px;
   font-weight: 700;
@@ -6948,9 +6967,19 @@ button.swiper-pagination-bullet {
   color: #9599AD;
   margin-bottom: 4px;
 }
+.hor .confirmation-token__network {
+  position: absolute;
+  bottom: -5px;
+  left: 36px;
+  font-size: 11px;
+}
 .confirmation-token__balance {
   font-size: 11px;
   font-weight: 500;
+}
+.hor .confirmation-token__balance {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .confirmation {
@@ -6964,13 +6993,18 @@ button.swiper-pagination-bullet {
   padding: 10px;
   margin-bottom: 8px;
 }
+.hor .confirmation {
+  width: calc(100% - 291px);
+  padding: 0;
+  margin: 0;
+}
 .confirmation::after {
   content: "";
   width: 24px;
   height: 24px;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 23, 82, 0.06);
           box-shadow: 0px 1px 1px rgba(0, 23, 82, 0.06);
-  background: white url("../img/change-fields-icon.svg") no-repeat center;
+  background: white url("../img/from-to-icon.svg") no-repeat center;
   border-radius: 5px;
   position: absolute;
   top: 50%;
@@ -6979,14 +7013,34 @@ button.swiper-pagination-bullet {
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
 }
+.hor .confirmation__cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 18px;
+}
 .confirmation__from, .confirmation__to {
   -webkit-box-flex: 1;
       -ms-flex: auto;
           flex: auto;
   width: 50%;
 }
+.hor .confirmation__from, .hor .confirmation__to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 48px;
+}
 .confirmation__from {
   border-right: 1px solid #E2E7F3;
+}
+.hor .confirmation__from {
+  padding-left: 16px;
 }
 .confirmation__to {
   padding-left: 22px;
@@ -7006,6 +7060,17 @@ button.swiper-pagination-bullet {
   padding: 16px 9px 16px 14px;
   margin-bottom: 16px;
 }
+.hor .confirmation-details {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 14px;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  width: 100%;
+}
 .confirmation-details__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7016,6 +7081,20 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.hor .confirmation-details__item {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 6px;
+}
+.hor .confirmation-details__item:not(:first-of-type)::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #E2E6EE;
+  margin-right: 8px;
 }
 .confirmation-details__name {
   display: -webkit-box;
@@ -7032,13 +7111,25 @@ button.swiper-pagination-bullet {
 .confirmation-details__name img {
   width: 18px;
 }
+.hor .confirmation-details__name {
+  font-size: 12px;
+}
 .confirmation-details__value {
   font-weight: 500;
   font-size: 11px;
 }
+.hor .confirmation-details__value {
+  font-size: 12px;
+}
 
 .confirmation-popup__header {
-  margin-bottom: 8px;
+  margin-bottom: 24px;
+}
+.hor .confirmation-popup__submit {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 283px;
 }
 
 .service-popup {

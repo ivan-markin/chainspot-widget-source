@@ -7,10 +7,31 @@
 	padding: 16px 9px 16px 14px;
 	margin-bottom: 16px;
 
+	.hor & {
+		flex-direction: row;
+		gap: 14px;	
+		order: 3;	
+		width: 100%;
+	}
+
 	&__item {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	.hor &__item {
+		justify-content: flex-start;
+		gap: 6px;
+
+		&:not(:first-of-type)::before {
+			content: '';
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background: #E2E6EE;
+			margin-right: 8px;
+		}
 	}
 
 	&__name {
@@ -26,8 +47,16 @@
 		}
 	}
 
+	.hor &__name {
+		font-size: 12px;
+	}
+
 	&__value {
 		font-weight: 500;
 		font-size: 11px;
+	}
+
+	.hor &__value {
+		font-size: 12px;
 	}
 }

@@ -1,6 +1,11 @@
 .confirmation-popup {
 
 	&__header {
-		margin-bottom: 8px;
+		margin-bottom: 24px;
+	}
+
+	.hor &__submit {
+		order: 2;
+		width: 283px;
 	}
 }
